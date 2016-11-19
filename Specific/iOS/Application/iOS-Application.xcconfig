@@ -8,3 +8,5 @@
 
 #include "../../../Shared/XCConfig/Targets/Application.xcconfig"
 #include "../iOS.xcconfig"
+
+INFOPLIST_FILE = $(PROJECT_DIR)/$(TARGET_NAME)/Supporting Files/Base.lproj/Info.plist
