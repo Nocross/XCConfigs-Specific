@@ -1,0 +1,10 @@
+//
+//  iOSlib-Debug.xcconfig
+//  XCConfigs
+//
+//  Created by Andrey Ilskiy on 26/10/14.
+//  Copyright (c) 2014 Andrey Ilskiy. All rights reserved.
+//
+
+#include "../iOSlib.xcconfig"
+#include "../../../../Shared/XCConfig/Configurations/Debug.xcconfig"
