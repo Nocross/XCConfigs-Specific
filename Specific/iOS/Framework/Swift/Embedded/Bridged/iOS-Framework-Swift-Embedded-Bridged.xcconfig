@@ -7,4 +7,4 @@
 //
 
 #include "../iOS-Framework-Swift-Embedded.xcconfig"
-#include "../../../../../../Shared/XCConfig/Swift/Swift-Bridged.xcconfig"
+#include "../../../../../../Shared/XCConfig/Swift/Swift-Bridge.xcconfig"
