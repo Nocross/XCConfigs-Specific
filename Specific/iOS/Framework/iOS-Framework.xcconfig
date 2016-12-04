@@ -10,3 +10,6 @@
 #include "../iOS.xcconfig"
 
 PRODUCT_NAME = $(PRODUCT_NAME_PREFIX)$(TARGET_NAME)
+
+CODE_SIGN_IDENTITY[sdk=iphonesimulator*] =
+CODE_SIGN_IDENTITY[sdk=iphoneos*] =
