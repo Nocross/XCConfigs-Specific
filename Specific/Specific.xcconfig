@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Andrey Ilskiy. All rights reserved.
 //
 
+
 PRODUCT_NAME_PREFIX = EXMPL
 ORGANIZATION_BUNDLE_IDENTIFIER_PREFIX = com.example
 
@@ -16,10 +17,16 @@ CURRENT_PROJECT_VERSION = 1
 VERSION_INFO_PREFIX = 
 
 //Packaging
-PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_BUNDLE_IDENTIFIER_PREFIX:lower).$(PROJECT_NAME:lower:rfc1034identifier).$(TARGET_NAME:lower:rfc1034identifier)
+PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_BUNDLE_IDENTIFIER_PREFIX:lower).$(PROJECT_NAME:lower:rfc1034identifier).$(PRODUCT_NAME:lower:rfc1034identifier)
 INFOPLIST_FILE = $(PROJECT_DIR)/$(TARGET_NAME)/Supporting Files/Info.plist
 
 //Language
 
 GCC_PRECOMPILE_PREFIX_HEADER = YES
 GCC_PREFIX_HEADER = $(PROJECT_DIR)/$(TARGET_NAME)/Supporting Files/PrefixHeader.pch
+
+//Preprocessing
+GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = $(inherited) PRODUCT_NAME_PREFIX=${PRODUCT_NAME_PREFIX}
+
+
+#include "../../External.xcconfig"
