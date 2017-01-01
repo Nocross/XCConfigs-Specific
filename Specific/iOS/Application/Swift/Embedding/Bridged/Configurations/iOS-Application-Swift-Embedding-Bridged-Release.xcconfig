@@ -8,4 +8,3 @@
 
 #include "../iOS-Application-Swift-Embedding-Bridged.xcconfig"
 #include "../../../../../../../Shared/XCConfig/Configurations/Release.xcconfig"
-SWIFT_OPTIMIZATION_LEVEL = -O
